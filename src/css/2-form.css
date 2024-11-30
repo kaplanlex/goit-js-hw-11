@@ -1,0 +1,121 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./vite-promo.css');
+@import url('./badges.css');
+@import url('./back-link.css');
+@import url('./footer.css');
+
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+padding: 24px;
+width: 408px;
+height: 296px;
+}
+
+.lable-one {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+text-align: left;
+ width: 360px;
+height: 72px;
+margin-bottom: 8px;
+}
+
+.lable-two{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+height: 112px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+text-align: left;
+margin-bottom: 16px;
+}
+
+input,
+textarea {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+input:hover,
+textarea:hover {
+  border-color: #555;
+}
+
+
+textarea:active {
+  border-color: #007bff;
+  background-color: #f0faff;
+}
+
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  
+ 
+ 
+  border: none;
+
+  background-color: #4e75ff;
+  
+  cursor: pointer;
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
