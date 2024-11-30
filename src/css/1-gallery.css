@@ -1,88 +1,104 @@
-
-
-.container {
-  text-align: center;
-  background: #fff;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 400px;
+.hidden {
+    display: none;
 }
 
-#datetime-picker {
-  margin-bottom: 15px;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+body{
+   margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button[data-start] {
-  width: 100%;
-  padding: 10px;
-  background-color: #5cb85c;
-  color: #fff;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  transition: background-color 0.3s;
+
+form {
+    width: auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button[data-start]:hover {
-  background-color: #4cae4c;
+form input[type="text"] {
+    padding: 0 12px;
+    height: 40px;
+    width: calc(100% - 100px);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #808080;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-button[data-start]:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+form input[type="text"]:focus {
+    border-color: #6c63ff;
 }
 
-.timer {
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
+form button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    height: 40px;
+    background-color: #4e75ff;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+form button:hover {
+    background-color: #6c8cff;
 }
 
-.value {
-  font-size: 40px;
-  font-weight: bold;
-  color: #333;
+#gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 4 - 20px), 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    width: 100%;
 }
 
-.label {
-  font-size: 14px;
-  color: #666;
-}
-/*____________________________*/
-body .iziToast {
-  border-radius: 8px !important;
-  padding: 15px !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
- background-color: #e72427 !important;
-  color: #fff !important; 
+#gallery div {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
 }
 
-body .iziToast-color-red {
-  background-color: #ff4d4f !important;
-  color: #fff !important;
+#gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-body .iziToast-message {
-  font-size: 18px !important;
-  font-weight: bold !important;
-  text-align: center !important;
+#gallery p {
+    margin: 0;
+    padding: 10px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 200%;
+letter-spacing: 0.04em;
+color: #2e2f42;
 }
 
-body .iziToast-icon {
-  font-size: 20px !important;
-}
+
 

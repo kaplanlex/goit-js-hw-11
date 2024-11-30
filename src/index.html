@@ -11,14 +11,15 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="./1-timer.html">task 1</a></li>
-            <li><a href="./2-snackbar.html">task 2</a></li>
-        </ul>
-    </nav>
+    <form id="search-form">
+        <input type="text" name="query" id="input" placeholder="Search images..." required />
+        <button type="submit">Search</button>
+    </form>
+    <div id="loader" class="hidden">Loading images, please wait...</div>
+    <div id="gallery" class="gallery"></div>
 
 
+    <script src="/main.js" type="module"></script>
 </body>
 
 </html>
